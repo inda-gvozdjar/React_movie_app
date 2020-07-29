@@ -1,13 +1,239 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+body {
+  font-family: 'monserrat', sans-serif ;
+  background-color:#eff3f7 ;
+  text-align: center;
+  width: 68%;
+  max-width: 80%;
+  margin:  0 auto;
+  padding: 15px;
 }
+
+main {
+	width: 100%;
+	max-width: 90% !important;
+	margin: 0 auto;
+}
+
+ul {
+  display: flex;
+	flex-wrap: wrap;
+	margin: 0px -15px;
+}
+
+.popularTitle{
+  position: relative;
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: bolder;
+    color: rgb(157, 159, 176);
+    overflow: hidden;
+    float: left;
+}
+.round{
+  display: flex;
+    height: 48px;
+    width: 48px;
+    margin-top: -110px;
+    margin-right: -60px;
+    float: right;
+    color: white;
+    box-shadow: rgb(201, 216, 219) 4px 4px 10px;
+    background-color: rgb(40, 121, 255);
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 50%;
+}
+.contentBox{
+  height: 100%;
+  width: 100%;
+  margin-left: 20px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.break{
+  margin-top: 70px;
+}
+.linkTitle{
+  border: none;
+	outline: none;
+  background: none;
+  margin: 0 auto;
+
+	border-radius: 8px;
+
+	color: rgb(56, 57, 58);
+	font-size: 12px;
+	font-weight: 300;
+
+  transition: 0.4s ease-out;
+  text-decoration: none;
+  
+  font-family: sans-serif;
+  
+}
+.fetch-button{
+  width: 12%;
+  height: 5%;
+	padding: 15px;
+
+	border: none;
+	outline: none;
+  background: none;
+  margin: 0 auto;
+
+	border-radius: 8px;
+
+	color: rgb(155, 159, 165);
+	font-size: 12px;
+	font-weight: 300;
+
+  transition: 0.4s ease-out;
+  text-decoration: none;
+  
+  font-family: sans-serif;
+
+}
+.fetch-button:focus {
+  box-shadow: 0px 0px 5px 3px #4484C4;
+}
+
+
+
+.searchbox {
+	display: block;
+  padding: 20px;
+  margin: 12px;
+  width: 1050px !important;
+ 
+
+	border: none;
+	outline: none;
+	background: none;
+
+	border-radius: 8px;
+
+	color: #53565A;
+	font-size: 20px;
+  font-weight: 300;
+  font-family: sans-serif;
+  text-align: center;
+  
+
+	transition: 0.4s ease-out;
+}
+
+
+.results {
+	display: flex;
+	flex-wrap: wrap;
+  width:100% !important;
+}
+
+.box {
+  display: inline-flex;
+    height: 150px;
+    width: 46%;
+    margin:20px;
+    box-shadow: rgb(224, 229, 236) 10px 5px 15px;
+    padding: 15px;
+    background: white;
+    border-top: inset;
+  
+}
+.popularPic {
+  width: 90px;
+  height: 128px;
+  border: outset;
+  margin-top: -40px;
+  box-shadow: rgb(219, 222, 227) 3px 2px 4px
+  
+ }
+.details{
+  display: flex;
+    width: 60px;
+    margin-right: 5px;
+    margin-top: 13px;
+    float: right;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 12px !important;
+    color: rgb(40, 121, 255);
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 10px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(40, 121, 255);
+    border-image: initial;
+    text-decoration: none !important;
+
+}
+main {
+  width: 100%;
+  max-width: 960px;
+  margin:  0 auto;
+}
+
+
+.searchbox:focus {
+  box-shadow: 0px 0px 8px 3px #4484C4;
+}
+
+.results{
+ background-color:rgba(40, 122, 255, 0.205) !important;
+}
+
+.details-main{
+  height: auto;
+  width: 40%;
+  background-color: rgba(241, 238, 238, 0.5);
+  margin-top: 100px;
+  margin-left: 30%;
+  padding: 70px;
+  position: relative;
+  box-shadow: 
+  12px 12px 16px 0 rgba(0, 0, 0, 0.226),
+  -8px -8px 12px 0 rgba(255, 255, 255, 0.3);
+  
+
+}
+
+.header-detail{
+  position: relative;
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: bolder;
+    overflow: hidden;
+    float: left;
+  color: rgba(40, 122, 255, 0.514);
+}
+
+.detail-info{
+  font-size: 12px;
+  text-align: center;
+  font-family: sans-serif;
+  color: rgb(148, 157, 168);
+}
+.detail-image{
+  
+  width: 120px;
+  height: 160px;
+  border: outset;
+  margin-top: -40px;
+  box-shadow: rgb(219, 222, 227) 3px 2px 4px
+}
+
